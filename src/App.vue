@@ -1,5 +1,6 @@
 <template lang="html">
   <div>
+    <h2 class="text-centre">Guardian Article App</h2>
     <article-select :articles="articles"></article-select>
     <article-detail :article="selectedArticle"></article-detail>
   </div>
@@ -32,5 +33,16 @@ export default {
 }
 </script>
 
+
+
 <style lang="css" scoped>
+
+h2 {
+  color: #FFE303;
+  background: DarkBlue;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+}
+
 </style>

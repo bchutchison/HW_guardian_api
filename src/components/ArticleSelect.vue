@@ -21,4 +21,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+select {
+  font-size: 1.0em;
+  width: 100%;
+  color: #FFE303;
+  background: DarkBlue;
+  height: 40px;
+}
+
 </style>
