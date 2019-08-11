@@ -4,10 +4,12 @@
     <nav>
       <router-link :to="{ name: 'home'}">Home</router-link>
       <router-link :to="{ name: 'films'}">Films</router-link>
+      <router-link :to="{ name: 'business'}">Business</router-link>
+      <router-link :to="{ name: 'sport'}">Sport</router-link>
     </nav>
-    <router-view id="view"></router-view>
-    <article-select :articles="articles"></article-select>
-    <article-detail :article="selectedArticle"></article-detail>
+    <router-view id="view" :articles="articles" :selectedArticle="selectedArticle"></router-view>
+    <!-- <article-select :articles="articles"></article-select>
+    <article-detail :article="selectedArticle"></article-detail> -->
   </div>
 </template>
 
@@ -53,7 +55,7 @@ h2 {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 20vw;
+  width: 40vw;
   margin: 0 auto;
 }
 
