@@ -1,10 +1,11 @@
 <template lang="html">
   <div>
+    <h2 class="text-centre">Guardian Article App</h2>
     <nav>
-
+      <router-link :to="{ name: 'home'}">Home</router-link>
+      <router-link :to="{ name: 'films'}">Films</router-link>
     </nav>
     <router-view id="view"></router-view>
-    <h2 class="text-centre">Guardian Article App</h2>
     <article-select :articles="articles"></article-select>
     <article-detail :article="selectedArticle"></article-detail>
   </div>
@@ -51,8 +52,30 @@ h2 {
 
 nav {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
+  width: 20vw;
   margin: 0 auto;
 }
+
+a {
+  color: #FFE303;
+  text-decoration: none;
+  background-color: DarkBlue;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 3px 3px
+}
+
+a:active {
+box-shadow: 2px 2px #FFE303;
+  transform: translateY(2px);
+}
+
+
+#view {
+}
+
+
 
 </style>
