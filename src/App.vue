@@ -1,5 +1,9 @@
 <template lang="html">
   <div>
+    <nav>
+
+    </nav>
+    <router-view id="view"></router-view>
     <h2 class="text-centre">Guardian Article App</h2>
     <article-select :articles="articles"></article-select>
     <article-detail :article="selectedArticle"></article-detail>
@@ -43,6 +47,12 @@ h2 {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  margin: 0 auto;
 }
 
 </style>
